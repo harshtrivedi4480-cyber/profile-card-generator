@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Profile · Profile Card Generator</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="brand">🪪 Profile Card Generator</a>
+    <nav>
+      <a href="/" class="active">New Profile</a>
+      <a href="/profiles">All Profiles</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container narrow">
+      <h1 class="page-title">Create Your Profile Card</h1>
+      <p class="page-subtitle">
+        Fill the form below — the server will process it and generate a
+        dynamic profile card for you.
+      </p>
+
+      <form action="/profile" method="POST" class="profile-form">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Harsh Trivedi" required maxlength="60" />
+
+        <label for="bio">Bio</label>
+        <textarea id="bio" name="bio" rows="4" maxlength="500"
+          placeholder="A short intro about yourself..."></textarea>
+
+        <label for="skills">Skills <span class="hint">(comma separated)</span></label>
+        <input type="text" id="skills" name="skills"
+          placeholder="e.g. React, Node.js, MongoDB, Express" />
+
+        <fieldset class="social-fieldset">
+          <legend>Social Links <span class="hint">(optional)</span></legend>
+
+          <label for="github">GitHub</label>
+          <input type="text" id="github" name="github" placeholder="github.com/username" />
+
+          <label for="linkedin">LinkedIn</label>
+          <input type="text" id="linkedin" name="linkedin" placeholder="linkedin.com/in/username" />
+
+          <label for="instagram">Instagram</label>
+          <input type="text" id="instagram" name="instagram" placeholder="instagram.com/username" />
+
+          <label for="twitter">Twitter / X</label>
+          <input type="text" id="twitter" name="twitter" placeholder="x.com/username" />
+
+          <label for="portfolio">Portfolio Website</label>
+          <input type="text" id="portfolio" name="portfolio" placeholder="yourportfolio.com" />
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary btn-block">✨ Generate Profile Card</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">Built with Node.js + Express · JSON file storage</footer>
+</body>
+</html>

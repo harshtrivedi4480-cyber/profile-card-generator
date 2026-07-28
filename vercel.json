@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/profile", "destination": "/api" },
+    { "source": "/profile/:path*", "destination": "/api" },
+    { "source": "/profiles", "destination": "/api" },
+    { "source": "/api/:path*", "destination": "/api" }
+  ]
+}
