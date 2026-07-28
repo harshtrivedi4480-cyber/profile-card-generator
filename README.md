@@ -99,7 +99,13 @@ cp .env.example .env
 npm run dev
 # open http://localhost:3000
 ```
+# 🪪 User Profile Card Generator — Vercel Edition
 
+🔗 **Live Demo:** [profile-card-generator-qwqn.vercel.app](https://profile-card-generator-qwqn.vercel.app/)
+
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://profile-card-generator-qwqn.vercel.app/)
+
+  
 ---
 
 ## 🔌 Routes
